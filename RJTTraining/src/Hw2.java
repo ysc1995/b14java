@@ -69,6 +69,7 @@ public class Hw2 {
 	}
 
 	private static int binary(int[] arr, int i) {
+		
 		bubble(arr);
 		System.out.println();
 		int first=0; 
