@@ -9,6 +9,7 @@ public class Hw2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = new int[10];
+		
 		arr[0]=8;
 		arr[1]=3;
 		arr[2]=6;
@@ -53,7 +54,7 @@ public class Hw2 {
 		arr[8]=7;
 		arr[9]=5;
 		System.out.println(linear(arr,4));
-		arr[0]=8;
+		arr[0]=13;
 		arr[1]=3;
 		arr[2]=6;
 		arr[3]=9;
@@ -63,24 +64,32 @@ public class Hw2 {
 		arr[7]=4;
 		arr[8]=7;
 		arr[9]=5;
-		System.out.println(binary(arr,4));
+		System.out.println(binary(arr,9));
 		
 	}
 
 	private static int binary(int[] arr, int i) {
 		bubble(arr);
+		System.out.println();
 		int first=0; 
 		int second=arr.length-1;
+		
 		int index=-1;
-		while(first<=second){
-			if(arr[second-first/2]==i){
-				return (second-first);
+		while(first<second){
+		
+			
+			
+			if(arr[(second-first)/2+first]==i){
+				
+				return (second-first)/2+first;
 			}
 			if(arr[(second-first)/2]<i){
-				first=(second-first)/2;
+				first=(second-first)/2+first;
+				
 			}
 			else{
-				second=(second-first)/2;
+				second=(second-first)/2+first;
+				
 			}
 		}
 		return index;
