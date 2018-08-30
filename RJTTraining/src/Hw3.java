@@ -9,7 +9,10 @@ public class Hw3 {
 		// TODO Auto-generated method stub
 		
 			
-		
+		/* 
+		 * Comment by NinnYu
+		 * Declare and initialize an array as int[] arr - {1, 1, 1, 1, 1};
+		 */
 		int[] a = new int[10];
 		a[0]=3;
 		a[1]=6;

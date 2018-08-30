@@ -10,6 +10,10 @@ public class Hw2 {
 		// TODO Auto-generated method stub
 		int[] arr = new int[10];
 		
+		/* 
+		 * Comment by NinnYu
+		 * Declare and initialize an array as int[] arr - {1, 1, 1, 1, 1};
+		 */
 		arr[0]=8;
 		arr[1]=3;
 		arr[2]=6;
@@ -20,6 +24,10 @@ public class Hw2 {
 		arr[7]=4;
 		arr[8]=7;
 		arr[9]=5;
+		/*
+		 * Comment by NinnYu
+		 * Print out which sorting was done.
+		 */
 		bubble(arr);
 		arr[0]=8;
 		arr[1]=3;

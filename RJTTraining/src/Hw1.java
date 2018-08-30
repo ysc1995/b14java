@@ -16,7 +16,10 @@ public class Hw1 {
 		armstrong();
 		
 	}
-	
+	/*
+	 * Comment by NinnYu
+	 * It's all good d('-' d)
+	 */
 	public static void armstrong() {
 		System.out.print("Armstrong: ");
 		for (int i = 0 ; i < 1000; i ++){
