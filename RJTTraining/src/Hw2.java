@@ -32,6 +32,7 @@ public class Hw2 {
 		arr[8]=7;
 		arr[9]=5;
 		selection(arr);
+		
 		arr[0]=8;
 		arr[1]=3;
 		arr[2]=6;
@@ -43,6 +44,7 @@ public class Hw2 {
 		arr[8]=7;
 		arr[9]=5;
 		insertion(arr);
+		
 		arr[0]=8;
 		arr[1]=3;
 		arr[2]=6;
@@ -68,7 +70,7 @@ public class Hw2 {
 		
 	}
 
-	private static int binary(int[] arr, int i) {
+	public static int binary(int[] arr, int i) {
 		
 		bubble(arr);
 		System.out.println();
@@ -96,7 +98,7 @@ public class Hw2 {
 		return index;
 	}
 
-	private static int linear(int[] arr, int n) {
+	public static int linear(int[] arr, int n) {
 		System.out.println();
 		
 		// TODO Auto-generated method stub
@@ -117,6 +119,7 @@ public class Hw2 {
 			while (j >= 0 && arr[j] > key) {
 				arr[j + 1] = arr[j];
 				j--;
+				
 			}
 			arr[j + 1] = key;
 		}

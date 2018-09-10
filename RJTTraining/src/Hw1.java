@@ -12,43 +12,54 @@ public class Hw1 {
 		fibonacci();
 		prime();
 		palindrome();
-		factorial(5);
-		armstrong();
-		
+		System.out.println(factorial(5));
+		int res[] = armstrong();
+		for (int i = 0 ; i < 14; i ++){
+			System.out.print(res[i]+" ");
+		}
 	}
 	
-	public static void armstrong() {
+	public static int[] armstrong() {
 		System.out.print("Armstrong: ");
+		int [] a = new int[14];
+		int count=0;
 		for (int i = 0 ; i < 1000; i ++){
 			if (i<10){
-				System.out.print(" "+i);
+				//System.out.print(" "+i);
+				a[count]=i;
+				count++;
 			}
 			else if(i<100){
 				int tem = i;
 				int res = (int) (Math.pow(tem%10,2)+Math.pow(tem/10, 2));
 				
 				if(res == i){
-					System.out.print(" "+i);
+					//System.out.print(" "+i);
+					a[count]=i;
+					count++;
 				}
 			}
 			else{
 				int tem = i;
 				int res = (int) (Math.pow(tem%10,3)+Math.pow((tem/10)%10,3)+Math.pow((tem/100)%10,3));
 				if(res == i){
-					System.out.print(" "+i);
+					//System.out.print(" "+i);
+					a[count]=i;
+					count++;
 				}
 			}
 		}
+		return a;
 		
 	}
 
-	public static void factorial(int n) {
+	public static int factorial(int n) {
 		System.out.println();
 		int res = 1;
 		for (int i = 1; i < n+1 ; i ++){
 			res=res*i;
 		}
-		System.out.println("Factorial: "+res);
+		return res;
 		
 	}
 

@@ -12,7 +12,7 @@ public class Hw4 {
 		System.out.println(findSecondLargetest(a));
 	}
 
-	private static int findSecondLargetest(int[] a) {
+	public static int findSecondLargetest(int[] a) {
 		int largest=a[1];
 		int second=a[0];
 		if(a[0]>a[1]){

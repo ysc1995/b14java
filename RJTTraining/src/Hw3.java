@@ -24,7 +24,7 @@ public class Hw3 {
 		
 		//Given an array of numbers find the two numbers which sum would be 
 		//equal to n (Solution should have least complexity)	
-		sumEqual(a,31);
+		System.out.println(sumEqual(a,31));
 		
 		
 		int[] b = new int[5];
@@ -41,7 +41,7 @@ public class Hw3 {
 		c[4]=90;
 		
 		//Program to identify common elements in two arrays [12,23,41,1,7] [3,34,41,8,90]
-		commonElements(b,c);
+		System.out.println(commonElements(b,c));
 		
 		
 		
@@ -50,40 +50,40 @@ public class Hw3 {
 
 	}
 
-	private static void commonElements(int[] b, int[] c) {
+	public static int commonElements(int[] b, int[] c) {
 		// TODO Auto-generated method stub
 		Set<Integer> set = new HashSet<Integer>();
-		boolean flag= false;
+		//boolean flag= false;
 		for (int i = 0 ; i < b.length;i++){
 			set.add(b[i]);
 			if(set.contains(c[i])){
-				System.out.println("common element:"+b[i]);
-				flag = true;
+				//System.out.println("common element:"+b[i]);
+				//flag = true;
+				return b[i];
 			}
 		}
-		if(flag==false){
-			System.out.println("no common elements found");
-		}
-		
+		return -1;
 		
 	}
 
-	private static void sumEqual(int[] a, int n) {
+	public static String sumEqual(int[] a, int n) {
 		// TODO Auto-generated method stub
 		Set<Integer> set = new TreeSet<Integer>();
-		boolean flag = false;
+		//boolean flag = false;
 		for (int i = 0 ; i < a.length;i++){
 			if (set.contains(n-a[i])){
-				System.out.println(n-a[i]+"+"+a[i]+"="+n);
-				flag = true;
+				String stringBuilder =n-a[i]+"+"+a[i]+"="+n;
+				//System.out.println(n-a[i]+"+"+a[i]+"="+n);
+				//flag = true;
+				return stringBuilder;
+				
 			}
 			else{
 				set.add(a[i]);
 			}
 		}
-		if (flag = false){
-			System.out.println("no results funded");
-		}
+		String stringBuilder = "no results funded";
+		return stringBuilder;
 		
 		
 	}
